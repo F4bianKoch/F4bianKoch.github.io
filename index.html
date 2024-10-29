@@ -1,1 +1,143 @@
-Hello, World!
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabian Koch - Lebenslauf</title>
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #e8f4fa;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #007acc;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 20px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .personal-info {
+      margin-bottom: 20px;
+    }
+
+    .personal-info p {
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .experience, .education, .skills {
+      margin-bottom: 15px;
+    }
+
+    .subheading {
+      font-weight: bold;
+      color: #005f99;
+    }
+
+    /* Print Button Styling */
+    .print-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 10px 0;
+      background-color: #007acc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .print-btn:hover {
+      background-color: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Fabian Koch</h1>
+    <div class="personal-info">
+      <p><strong>Tel.:</strong> +49 1525 2583483</p>
+      <p><strong>E-Mail:</strong> fabian.cook@web.de</p>
+      <p><strong>Geburtsdatum:</strong> 11.08.2004, Erding</p>
+    </div>
+
+    <h2>Schulbildung</h2>
+    <div class="education section">
+      <p><span class="subheading">Grundschule Klettham, Erding:</span> September 2010 – Juli 2014</p>
+      <p><span class="subheading">Herzog-Tassilo Realschule, Erding:</span> September 2014 – Juli 2020</p>
+      <p><span class="subheading">FOS Erding (Fachabitur):</span> September 2020 – Juli 2022</p>
+      <p><span class="subheading">Hochschule Landshut (Studiengang Informatik):</span> seit Oktober 2022</p>
+    </div>
+
+    <h2>Praktische Erfahrung</h2>
+    <div class="experience section">
+      <p><span class="subheading">Praktikum im Buchhandel - Bucherding, Erding:</span> 23.07.2018 – 26.07.2018</p>
+      <p><span class="subheading">Praktikum bei Mair Elektroniks - Mikrotechnologie:</span> 08.04.2019 – 12.04.2019</p>
+      <p><span class="subheading">Praktikum bei KARE Design:</span> 22.07.2019 – 26.07.2019</p>
+      <ul>
+        <li>IT-Support</li>
+        <li>Systemadministration</li>
+      </ul>
+      <p><span class="subheading">Werkstudententätigkeit KARE Design IT-Dev:</span> Dezember 2022 – September 2024</p>
+      <ul>
+        <li>ERP customizing</li>
+      </ul>
+      <p><span class="subheading">Praxissemester bei der BMW Group:</span> September 2024 – jetzt</p>
+      <ul>
+        <li>CI/CD und KI</li>
+      </ul>
+    </div>
+
+    <h2>Persönliche Fähigkeiten & Kompetenzen</h2>
+    <div class="skills section">
+      <p><span class="subheading">Computerkenntnisse:</span> Gute Kenntnisse in Textverarbeitung, Tabellenkalkulation, Montage von Computern</p>
+      <p><span class="subheading">Programmier- und Webdesignsprachen:</span> Java, C, Python, JavaScript, HTML, CSS, SQL</p>
+      <p><span class="subheading">Betriebssysteme / Software:</span> Linux, Windows, VS Code, VIM, Gradle, Docker, Tests mit JUnit5, VCS (Git, GitHub, GitLab), CI/CD, PostgreSQL</p>
+      <p><span class="subheading">Sprachkenntnisse:</span> Deutsch (Muttersprache), Gute Englischkenntnisse</p>
+      <p><span class="subheading">Persönliche Stärken:</span> Teamfähigkeit, Zuverlässigkeit, Kommunikationsfähigkeit</p>
+      <p><span class="subheading">Interessen:</span> Baseball, Informatik</p>
+      <p><span class="subheading">Ehrenamtliche Tätigkeiten:</span> Nachwuchstrainer FC Schwaig Baseball</p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">Print Lebenslauf</button>
+  </div>
+
+  <script>
+    // Print Button Script
+    function printCV() {
+      window.print();
+    }
+  </script>
+</body>
+</html>
