@@ -1,60 +1,92 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabian Koch - Lebenslauf</title>
+  <title>Fabian Koch - CV</title>
   <style>
     /* General Styling */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
     }
 
     body {
-      background-color: #e8f4fa;
+      background-color: #e0f2ff;
       color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
       padding: 20px;
+      line-height: 1.6;
     }
 
     .container {
       max-width: 800px;
       margin: 0 auto;
+      margin-top: 80px;
       background-color: #ffffff;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      padding: 30px;
+      padding-top: 100px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      transform: translateX(-5%);
+      object-fit: cover;
+    }
+
+    .profile-image-container {
+      width: 170px;
+      height: 170px;
+      margin-top: 100px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      position: absolute;
+      top: -75px;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     h1, h2 {
       color: #007acc;
+      margin-bottom: 15px;
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     h2 {
-      font-size: 22px;
-      margin-top: 20px;
+      font-size: 26px;
       border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
     }
 
     .personal-info {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .personal-info p {
-      line-height: 1.6;
+      margin-bottom: 5px;
     }
 
     .section {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+    }
+
+    .section p {
+      margin-top: 10px;
     }
 
     .experience, .education, .skills {
@@ -66,16 +98,26 @@
       color: #005f99;
     }
 
+    ul {
+      list-style-type: disc;
+      padding-left: 20px; /* Indentation for bullet points */
+      margin-top: 5px;
+    }
+
     /* Print Button Styling */
     .print-btn {
-      display: inline-block;
-      padding: 10px 15px;
-      margin: 10px 0;
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 20px 0;
       background-color: #007acc;
       color: #ffffff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
     }
 
     .print-btn:hover {
@@ -85,52 +127,55 @@
 </head>
 <body>
   <div class="container">
+    <div class="profile-image-container">
+      <img src="ProfilePicture.jpg" alt="Profile Picture of Fabian Koch" class="profile-image">
+    </div>
+
     <h1>Fabian Koch</h1>
     <div class="personal-info">
-      <p><strong>Tel.:</strong> +49 1525 2583483</p>
-      <p><strong>E-Mail:</strong> fabian.cook@web.de</p>
-      <p><strong>Geburtsdatum:</strong> 11.08.2004, Erding</p>
+      <p><strong>Phone:</strong> +49 1525 2583483</p>
+      <p><strong>Email:</strong> fabian.cook@web.de</p>
+      <p><strong>Date of Birth:</strong> 11.08.2004, Erding</p>
     </div>
 
-    <h2>Schulbildung</h2>
+    <h2>Education</h2>
     <div class="education section">
-      <p><span class="subheading">Grundschule Klettham, Erding:</span> September 2010 – Juli 2014</p>
-      <p><span class="subheading">Herzog-Tassilo Realschule, Erding:</span> September 2014 – Juli 2020</p>
-      <p><span class="subheading">FOS Erding (Fachabitur):</span> September 2020 – Juli 2022</p>
-      <p><span class="subheading">Hochschule Landshut (Studiengang Informatik):</span> seit Oktober 2022</p>
+      <p><span class="subheading">Klettham Elementary School, Erding:</span> September 2010 – July 2014</p>
+      <p><span class="subheading">Herzog-Tassilo Middle School, Erding:</span> September 2014 – July 2020</p>
+      <p><span class="subheading">FOS Erding (Advanced Secondary School Diploma):</span> September 2020 – July 2022</p>
+      <p><span class="subheading">Landshut University of Applied Sciences (Computer Science):</span> since October 2022</p>
     </div>
 
-    <h2>Praktische Erfahrung</h2>
+    <h2>Practical Experience</h2>
     <div class="experience section">
-      <p><span class="subheading">Praktikum im Buchhandel - Bucherding, Erding:</span> 23.07.2018 – 26.07.2018</p>
-      <p><span class="subheading">Praktikum bei Mair Elektroniks - Mikrotechnologie:</span> 08.04.2019 – 12.04.2019</p>
-      <p><span class="subheading">Praktikum bei KARE Design:</span> 22.07.2019 – 26.07.2019</p>
+      <p><span class="subheading">Internship at Bucherding, Erding (Bookstore):</span> 23.07.2018 – 26.07.2018</p>
+      <p><span class="subheading">Internship at Mair Elektroniks (Microtechnology):</span> 08.04.2019 – 12.04.2019</p>
+      <p><span class="subheading">Internship at KARE Design GmbH:</span> 22.07.2019 – 26.07.2019</p>
       <ul>
-        <li>IT-Support</li>
-        <li>Systemadministration</li>
+        <li>IT Support</li>
+        <li>System Administration</li>
       </ul>
-      <p><span class="subheading">Werkstudententätigkeit KARE Design IT-Dev:</span> Dezember 2022 – September 2024</p>
+      <p><span class="subheading">Student Employee at KARE Design GmbH IT-Dev:</span> December 2022 – September 2024</p>
       <ul>
-        <li>ERP customizing</li>
+        <li>ERP Customization</li>
       </ul>
-      <p><span class="subheading">Praxissemester bei der BMW Group:</span> September 2024 – jetzt</p>
+      <p><span class="subheading">Internship Semester at BMW Group:</span> September 2024 – Present</p>
       <ul>
-        <li>CI/CD und KI</li>
+        <li>CI/CD and AI</li>
       </ul>
     </div>
 
-    <h2>Persönliche Fähigkeiten & Kompetenzen</h2>
+    <h2>Skills & Competencies</h2>
     <div class="skills section">
-      <p><span class="subheading">Computerkenntnisse:</span> Gute Kenntnisse in Textverarbeitung, Tabellenkalkulation, Montage von Computern</p>
-      <p><span class="subheading">Programmier- und Webdesignsprachen:</span> Java, C, Python, JavaScript, HTML, CSS, SQL</p>
-      <p><span class="subheading">Betriebssysteme / Software:</span> Linux, Windows, VS Code, VIM, Gradle, Docker, Tests mit JUnit5, VCS (Git, GitHub, GitLab), CI/CD, PostgreSQL</p>
-      <p><span class="subheading">Sprachkenntnisse:</span> Deutsch (Muttersprache), Gute Englischkenntnisse</p>
-      <p><span class="subheading">Persönliche Stärken:</span> Teamfähigkeit, Zuverlässigkeit, Kommunikationsfähigkeit</p>
-      <p><span class="subheading">Interessen:</span> Baseball, Informatik</p>
-      <p><span class="subheading">Ehrenamtliche Tätigkeiten:</span> Nachwuchstrainer FC Schwaig Baseball</p>
+      <p><span class="subheading">Programming & Web Development:</span> Strong knowledge in Java, C, Python, JavaScript, HTML, CSS, and SQL.</p>
+      <p><span class="subheading">Operating Systems / Software:</span> Experienced with Linux, Windows, VS Code, VIM, Gradle, Docker, JUnit5, pytest and version control systems (Git, GitHub, GitLab), as well as CI/CD and PostgreSQL.</p>
+      <p><span class="subheading">Languages:</span> Native in German, Fluent in English.</p>
+      <p><span class="subheading">Personal Strengths:</span> Teamwork, Reliability, Communication Skills.</p>
+      <p><span class="subheading">Interests:</span> Baseball, Computer Science.</p>
+      <p><span class="subheading">Volunteer Activities:</span> Coach, FC Schwaig Baseball Team.</p>
     </div>
 
-    <button class="print-btn" onclick="window.print()">Print Lebenslauf</button>
+    <button class="print-btn" onclick="window.print()">Print CV</button>
   </div>
 
   <script>
